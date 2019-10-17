@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+</style>
+
+<head>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <h1>GitHub Backatcha</h1>
+    <div id="divUnauthorized">
+      <h2>Log In:</h2>
+      <i id="iError" style="color: red"></i>
+      <label for="txtUsername"><b>GitHub Username:</b></label>
+      <input type="text" placeholder="Enter Username" id="txtUsername" required />
+      <br />
+      <label for="txtPassword"><b>GitHub Password:</b></label>
+      <input type="password" placeholder="Enter Password" id="txtPassword" required />
+      <br />
+      <button id="btnLogIn">Login</button>
+    </div>
+    <div id="divAuthorized">
+      <h2>Logged In</h2>
+      <button id="btnLogOut" onclick="logOut">Log Out</button>
+    </div>
+    <div id="divWaiting">
+      <h1>Waiting...</h1>
+    </div>
+    <!-- <div id="user_info"></div>
+    <button id="signin" style="display:none">Sign in</button>
+    <button id="revoke" style="display:none">Revoke token</button>
+    <br><b>Your repos:</b> <br>
+    <textarea id="user_repos" style="width: 95%; min-height: 200px"></textarea> -->
+</body>
+
+</html>
